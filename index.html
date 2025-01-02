@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <i class="fa-brands fa-html5"></i>
+                <ul id="sidemenu">
+                    <li><a href="#header">Beranda</a></li>
+                    <li><a href="#about">Profile</a></li>
+                    <li><a href="#hobies">Hobi</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Programmer</p>
+                <h1>Hai, Saya Muhamad <br> <span>Davi</span> Najamudin Ansori <br>Dari SMKN 4 Bogor </h1>
+            </div>
+        </div>
+    </div>
+    <!------About--------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/231a7844-7373-40a2-93cb-eb3cc408c442.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">Tentang Saya</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, dolor. 
+                        Aliquid distinctio, sit iusto pariatur quod ipsam blanditiis eius at magnam ea, 
+                        dolorem temporibus earum adipisci sequi quo neque nisi.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Prestasi')">Prestasi</p>
+                            <p class="tab-links" onclick="opentab('Pendidikan')">Pendidikan</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>Analisis</span><br>Saya suka melakukan analisis keadaan di sekitar Saya</li>
+                                <li><span>Public Speaking</span><br>Saya Cukup Mahir Dalam Public Speaking</li>
+                                <li><span>Mahir Bermain Game</span><br>Saya Sangat Mahir Bermain Game Mobile Legends</li>
+                            </ul>
+                        </div >
+                        <div class="tab-contents" id="Prestasi">
+                            <ul>
+                                <li><span>2014-2015</span><br>Peringkat 2 Paud</li>
+                                <li><span>2015-2021</span><br>Peringkat 3 Kelas 1 <br>
+                                    Peringkat 2 Kelas 2 <br>Peringkat 1 Kelas 3</li>
+                                <li><span>2021-2024</span><br>Peringkat 2 Kelas 7 <br>
+                                    Peringkat 4 Kelas 8 <br>Peringkat 10 Siswa Bidang Nakademik SMPN 1 Megamendung</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Pendidikan">
+                            <ul>
+                                <li><span>2014-2015</span><br>Paud Al-fauzan</li>
+                                <li><span>2015-2021</span><br>SDN Pasir Angin 02</li>
+                                <li><span>2021-2024</span><br>SMPN 1 Megamendung</li>
+                                <li><span>2024-2027</span><br>SMKN 4 Kota Bogor</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------services--------->
+    <div id="hobies">
+        <div class="container">
+            <h1 class="sub-title">My Hobies</h1>
+            <div class="hobies-list">
+                <div>
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h2>Bermain Game</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Totam, reprehenderit? Commodi, deleniti, unde sit dolor repudiandae suscipit reiciendis,
+                         fugit adipisci voluptatibus assumenda exercitationem.
+                          Non id eligendi distinctio! Rem, dolorem aut.</p>
+                          <a href="#"></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h2>Workout</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Totam, reprehenderit? Commodi, deleniti, unde sit dolor repudiandae suscipit reiciendis,
+                         fugit adipisci voluptatibus assumenda exercitationem.
+                          Non id eligendi distinctio! Rem, dolorem aut.</p>
+                          <a href="#"></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Coding</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Totam, reprehenderit? Commodi, deleniti, unde sit dolor repudiandae suscipit reiciendis,
+                         fugit adipisci voluptatibus assumenda exercitationem.
+                          Non id eligendi distinctio! Rem, dolorem aut.</p>
+                          <a href="#"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------portofolio--------->
+    <div class="portofolio">
+        <div class="container">
+            <h1 class="sub-title">My Dreams</h1>
+            <div class="dreams-list">
+                <div class="dream">
+                    <img src="img/b14114e4-7342-4e38-bf32-3ed2ceebfbfc.jpeg" alt="me">
+                    <div class="layer">
+                        <h3>Programmer</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem, 
+                            nihil commodi facere beatae,
+                             deleniti ratione consequatur animi fugiat minus fugit rerum voluptatem. 
+                            Sed eaque, ratione dolore modi eveniet aut.</p>
+                            <a href="https://www.dicoding.com/blog/apa-itu-programmer-hal-yang-wajib-dikuasai/"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+                <div class="dream">
+                    <img src="img/77e13e76-16e2-4a57-8392-d75185362ab9.jpeg">
+                    <div class="layer">
+                        <h3>Tentara</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem, 
+                            nihil commodi facere beatae,
+                             deleniti ratione consequatur animi fugiat minus fugit rerum voluptatem. 
+                            Sed eaque, ratione dolore modi eveniet aut.</p>
+                            <a href="https://id.m.wikipedia.org/wiki/Komando_Pasukan_Khusus"><i class="fa-solid fa-person-military-rifle"></i></a>
+                    </div>
+                </div>
+                <div class="dream">
+                    <img src="img/3dc14118-d764-4138-9818-7eef6707be1f.jpeg" alt="">
+                    <div class="layer">
+                        <h3>Presiden</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem, 
+                            nihil commodi facere beatae,
+                             deleniti ratione consequatur animi fugiat minus fugit rerum voluptatem. 
+                            Sed eaque, ratione dolore modi eveniet aut.</p>
+                            <a href="https://id.m.wikipedia.org/wiki/Presiden"><i class="fa-solid fa-flag"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="index2.html" class="btn">Lainnya</a>
+        </div>
+    </div>
+    <footer>
+        <div id="contact">
+        <div class="Foot-container">
+            <div class="contact">
+                <h4>Contact</h4>
+                <div class="contact-list">
+                    <i class="fa-brands fa-whatsapp"></i><a href="">+62 857-7199-7703 (Davi)</a>
+                </div>
+            </div>
+                    <div class="footer-col">
+                        <h4>Social Media</h4>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/mdavv_13?igsh=MXFiMWY5Mnk4MXFqZg=="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@imdavv01?_t=8siTOqmjh3K&_r=1"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <h1>Copyright 2024 Muhamad Davi Najamudin Ansori</h1>
+        </div>
+    </footer>
+    
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks ){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents ){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
