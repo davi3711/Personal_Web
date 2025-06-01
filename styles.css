@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-family: Poppins;
     box-sizing: border-box;
 }
 html{
@@ -10,6 +10,7 @@ html{
 body{
     background: #080808;
     color: #fff;
+    font-family: Poppins;
 }
 #header{
     width: 100%;
@@ -17,6 +18,7 @@ body{
     background-image: url(img/7ca8d8cd-841b-4c10-b216-46567348fe42.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment:fixed;
 }
 .container{
     padding: 10px 10%;
@@ -54,6 +56,22 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+nav ul li ul.dropdown li{
+    display: block;
+    transition: 0.5s;
+}
+nav ul li ul.dropdown{
+    display: none;
+    width: 100px;
+    z-index: 999;
+    position: absolute;
+    background-color: #ff004f;
+    transition: 0.5s;
+}
+nav ul li:hover ul.dropdown{
+    display: block;
+    transition: 0.5s;
+}
 .header-text{
     margin-top: 20%;
     font-size: 30px;
@@ -81,6 +99,7 @@ nav ul li a:hover::after{
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
+    height: 400px;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -145,6 +164,7 @@ nav ul li a:hover::after{
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
+    transition: 0.3s;
     transition: background 0.5s, transform 0.5s;
 }
 .hobies-list div i{
@@ -165,7 +185,7 @@ nav ul li a:hover::after{
 }
 .hobies-list div:hover{
     background:#ff004f ;
-    transform: translateY(-10px);
+    transform: translateY(-20px);
 }
 /*-----portofolio-----*/
 #portofolio{
@@ -277,6 +297,47 @@ nav ul li a:hover::after{
 .slider-nav a:hover{
     opacity: 1;
 }
+
+.project .card-container{
+    gap: 40px;
+}
+#pr{
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+.project{
+    margin-top: 150px;
+}
+.project h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+.card2{
+    width: 350px;
+    height: 360px;
+    background-color: #262626;
+    transition: 0.3s;
+    border-radius: 12px;
+}
+.card2 img{
+    width: 350px;
+    border-radius: 12px 12px 0 0;
+}
+.card2 h3{
+    padding: 10px 20px;
+    font-size: 30px;
+}
+.card2 p{
+    padding: 0 20px;
+}
+.card2:hover{
+    background-color: #ff004f;
+    transform: translateY(-15px);
+    transition: 0.3s;
+    box-shadow: 0 8px 20px #666;
+}
+
 .btn{
     display: block;
     margin: 50px auto;
@@ -520,11 +581,11 @@ object-fit: cover;
     }
     .slider{
         height: 250px;
-        width: 410px;
+        width: 300px;
     }
     .slider img{
         height: 250px;
-        width: 410px;
+        width: 300px;
     }
 
     .contact h4{

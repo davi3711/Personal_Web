@@ -6,16 +6,24 @@
     <title>Personal Web</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <i class="fa-brands fa-html5"></i>
-                <ul id="sidemenu">
+                <ul data-aos="fade-left" data-aos-duration="2000" id="sidemenu">
                     <li><a href="#header">Beranda</a></li>
                     <li><a href="#about">Profile</a></li>
-                    <li><a href="#hobies">Hobi</a></li>
+                    <li><a href="#hobies">Other</a>
+                    <ul class="dropdown">
+                        <li><a href="#hobies">Hobi</a></li>
+                        <li><a href="#dreams">Dreams</a></li>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#CV">CV</a></li>
+                    </ul>
+                    </li>
                     <li><a href="#contact">Contact</a></li>
                     <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
@@ -23,8 +31,8 @@
                 
             </nav>
             <div class="header-text">
-                <p>Programmer</p>
-                <h1>Hai, Saya Muhamad <br> <span>Davi</span> Najamudin Ansori <br>Dari SMKN 4 Bogor </h1>
+                <p  data-aos="fade-right" data-aos-duration="2000">Programmer</p>
+                <h1 data-aos="fade-right" data-aos-duration="2000">Hai, Saya Muhamad <br> <span>Davi</span> Najamudin Ansori <br>Dari SMKN 4 Bogor </h1>
             </div>
         </div>
     </div>
@@ -33,28 +41,28 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="img/231a7844-7373-40a2-93cb-eb3cc408c442.jpeg" alt="">
+                    <img data-aos="fade-up" data-aos-duration="1500" src="img/47cd325d-9eb0-4126-9b86-e726330ab15e.jpg" alt="">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title">Tentang Saya</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, dolor. 
-                        Aliquid distinctio, sit iusto pariatur quod ipsam blanditiis eius at magnam ea, 
-                        dolorem temporibus earum adipisci sequi quo neque nisi.</p>
+                    <h1 data-aos="zoom-in" data-aos-duration="1500" class="sub-title">Tentang Saya</h1>
+                    <p data-aos="zoom-in" data-aos-duration="1500">Hai Nama Saya Muhamad Davi Najamudin Ansori, Saya Adalah Siswa Jurusan PPLG dari SMKN 4
+                        Kota Bogor, Saya dari Kelas X-PPLG-1. Saya lahir pada 13 November 2008 di Bogor.
+                    </p>
 
-                        <div class="tab-titles">
+                        <div data-aos="zoom-in" data-aos-duration="1500" class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
                             <p class="tab-links" onclick="opentab('Prestasi')">Prestasi</p>
                             <p class="tab-links" onclick="opentab('Pendidikan')">Pendidikan</p>
                         </div>
-                        <div class="tab-contents active-tab" id="Skills">
+                        <div data-aos="zoom-in" data-aos-duration="1500" class="tab-contents active-tab" id="Skills">
                             <ul>
                                 <li><span>Analisis</span><br>Saya suka melakukan analisis keadaan di sekitar Saya</li>
                                 <li><span>Public Speaking</span><br>Saya Cukup Mahir Dalam Public Speaking</li>
                                 <li><span>Mahir Bermain Game</span><br>Saya Sangat Mahir Bermain Game Mobile Legends</li>
                             </ul>
                         </div >
-                        <div class="tab-contents" id="Prestasi">
-                            <ul>
+                        <div data-aos="zoom-in" data-aos-duration="1500" class="tab-contents" id="Prestasi">
+                            <ul data-aos="zoom-in" data-aos-duration="1500">
                                 <li><span>2014-2015</span><br>Peringkat 2 Paud</li>
                                 <li><span>2015-2021</span><br>Peringkat 3 Kelas 1 <br>
                                     Peringkat 2 Kelas 2 <br>Peringkat 1 Kelas 3</li>
@@ -62,8 +70,8 @@
                                     Peringkat 4 Kelas 8 <br>Peringkat 10 Siswa Bidang Nakademik SMPN 1 Megamendung</li>
                             </ul>
                         </div>
-                        <div class="tab-contents" id="Pendidikan">
-                            <ul>
+                        <div data-aos="zoom-in" data-aos-duration="1500" class="tab-contents" id="Pendidikan">
+                            <ul data-aos="zoom-in" data-aos-duration="1500">
                                 <li><span>2014-2015</span><br>Paud Al-fauzan</li>
                                 <li><span>2015-2021</span><br>SDN Pasir Angin 02</li>
                                 <li><span>2021-2024</span><br>SMPN 1 Megamendung</li>
@@ -77,81 +85,103 @@
     <!------services--------->
     <div id="hobies">
         <div class="container">
-            <h1 class="sub-title">My Hobies</h1>
+            <h1 data-aos="fade-right" data-aos-duration="1200" class="sub-title">My Hobies</h1>
             <div class="hobies-list">
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1500">
                     <i class="fa-solid fa-gamepad"></i>
                     <h2>Bermain Game</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Totam, reprehenderit? Commodi, deleniti, unde sit dolor repudiandae suscipit reiciendis,
-                         fugit adipisci voluptatibus assumenda exercitationem.
-                          Non id eligendi distinctio! Rem, dolorem aut.</p>
+                    <p>Saya Sangat Suka Memainkan Game Mobile Legends Bang-Bang, Yaitu Game Online
+                        Bertema MOBA 5vs5, Dan Memiliki Banyak Sekali Hero Dan Skin Yang Keren,
+                        Dan Saya Sangat Mahir Memainkannya.
+                    </p>
                           <a href="#"></a>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1500">
                     <i class="fa-solid fa-dumbbell"></i>
                     <h2>Workout</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Totam, reprehenderit? Commodi, deleniti, unde sit dolor repudiandae suscipit reiciendis,
-                         fugit adipisci voluptatibus assumenda exercitationem.
-                          Non id eligendi distinctio! Rem, dolorem aut.</p>
+                    <p>Saya Sangat Suka Workout Karena Dapat Membuat Tubuh Kita
+                        Lebih Bugar, Fit, Dan Sehat, Biasanya Saya Melakukan Gerakan Push up,
+                        Sit up, Squat, Tricep dip, Dan Diamond Push up.
+                    </p>
                           <a href="#"></a>
                 </div>
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1500">
                     <i class="fa-solid fa-code"></i>
                     <h2>Coding</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Totam, reprehenderit? Commodi, deleniti, unde sit dolor repudiandae suscipit reiciendis,
-                         fugit adipisci voluptatibus assumenda exercitationem.
-                          Non id eligendi distinctio! Rem, dolorem aut.</p>
+                    <p>Saya Sangat Suka Belajar Coding, Karena Dapat Membuat Kita Berfikir Logis,
+                        Dan Karena Jurusan PPLG Maka Saya Harus Mahir Mengoding,
+                        Karena Cita-Cita Saya Adalah Programmer.
+                    </p>
                           <a href="#"></a>
                 </div>
             </div>
         </div>
     </div>
     <!------portofolio--------->
-    <div class="portofolio">
+    <div class="portofolio" id="dreams">
         <div class="container">
-            <h1 class="sub-title">My Dreams</h1>
+            <h1 data-aos="fade-right" data-aos-duration="1200" class="sub-title">My Dreams</h1>
             <div class="dreams-list">
-                <div class="dream">
+                <div data-aos="fade-up" data-aos-duration="1500" class="dream">
                     <img src="img/b14114e4-7342-4e38-bf32-3ed2ceebfbfc.jpeg" alt="me">
                     <div class="layer">
                         <h3>Programmer</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem, 
-                            nihil commodi facere beatae,
-                             deleniti ratione consequatur animi fugiat minus fugit rerum voluptatem. 
-                            Sed eaque, ratione dolore modi eveniet aut.</p>
+                        <p>Saya Mempunyai Cita-Cita Utama Yaitu Menjadi Programmer Yang Hebat Dan Sukses</p>
                             <a href="https://www.dicoding.com/blog/apa-itu-programmer-hal-yang-wajib-dikuasai/"><i class="fa-solid fa-code"></i></a>
                     </div>
                 </div>
-                <div class="dream">
+                <div data-aos="fade-up" data-aos-duration="1500" class="dream">
                     <img src="img/77e13e76-16e2-4a57-8392-d75185362ab9.jpeg">
                     <div class="layer">
                         <h3>Tentara</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem, 
-                            nihil commodi facere beatae,
-                             deleniti ratione consequatur animi fugiat minus fugit rerum voluptatem. 
-                            Sed eaque, ratione dolore modi eveniet aut.</p>
+                        <p>Saya Juga Mempunyai Cita-Cita Dari Kecil Menjadi Prajurit TNI Angkatan Darat Dan Bisa Masuk
+                            Satuan Elite Kopassus
+                        </p>
                             <a href="https://id.m.wikipedia.org/wiki/Komando_Pasukan_Khusus"><i class="fa-solid fa-person-military-rifle"></i></a>
                     </div>
                 </div>
-                <div class="dream">
+                <div data-aos="fade-up" data-aos-duration="1500" class="dream">
                     <img src="img/3dc14118-d764-4138-9818-7eef6707be1f.jpeg" alt="">
                     <div class="layer">
                         <h3>Presiden</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae autem, 
-                            nihil commodi facere beatae,
-                             deleniti ratione consequatur animi fugiat minus fugit rerum voluptatem. 
-                            Sed eaque, ratione dolore modi eveniet aut.</p>
+                        <p>Saya Juga Mempunyai Cita-Cita Menjadi Seorang Presiden, Karena Saya
+                            Ingin Membuat Negara Indonesia Menjadi Negara Maju Dan Tidak Ada Kemiskinan
+                            Dimana pun
+                        </p>
                             <a href="https://id.m.wikipedia.org/wiki/Presiden"><i class="fa-solid fa-flag"></i></a>
                     </div>
                 </div>
             </div>
 
-            <a href="index2.html" class="btn">Lainnya</a>
+          <div class="project" id="project">
+            <h1  data-aos="fade-right" data-aos-duration="1200">Project</h1>
+            <div  data-aos="fade-up" data-aos-duration="1500" class="card-container">
+                <a id="pr" href="https://davi3711.github.io/Website-Davi/">
+                <div class="card2">
+                    <img src="img/Screenshot (1).png" alt="">
+                    <h3>Go Travel</h3>
+                    <p>Website Travel yang saya buat dengan HTML CSS untuk tugas kejuruan</p>
+                </div>
+                </a>
+                <a id="pr" href="https://davi13.infinityfreeapp.com/">
+                 <div class="card2">
+                    <img src="img/Screenshot (17).png" alt="">
+                    <h3>Infinix</h3>
+                    <p>Website E-commerce yang saya buat dengan wordpress untuk tugas kejuruan</p>
+                </div>
+                </a>
+            </div>
+          </div>
+
+            <a data-aos="zoom-in" data-aos-duration="1500" href="index2.html" class="btn">Sertifikat</a>
+            <a data-aos="zoom-in" data-aos-duration="1500" id="CV" href="https://www.canva.com/design/DAGpGU5-oIc/vVASst14E0hJ6O467KZIGA/view?utm_content=DAGpGU5-oIc&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h3ad650990d" class="btn">My CV</a>
         </div>
     </div>
+
+
+
+
+
     <footer>
         <div id="contact">
         <div class="Foot-container">
@@ -198,7 +228,11 @@
         function closemenu(){
             sidemenu.style.right = "-200px";
         }
-
     </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+
 </body>
 </html>
